@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículum de Julián Forero - Desarrollador con habilidades en HTML, CSS, JavaScript y Python">
+  <title>Currículum - Julián Forero | Desarrollador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+  <div class="contenedor">
+    <header class="perfil" id="inicio">
+      <div class="foto-container">
+        <img src="imagenes/foto-azul.jpg" alt="Foto de Julián Forero" class="foto-perfil rotate-3d" width="180" height="230" loading="lazy" />
+      </div>
+      
+      <div class="perfil-info">
+        <h1 class="typing-effect">Julián David Forero Hernández</h1>
+        <div class="perfil-titulo">
+          <span class="badge">Desarrollador Web</span>
+          <span class="badge">Programador</span>
+        </div>
+        <p>
+          Soy una persona proactiva con habilidades para el trabajo en equipo y rápida capacidad de aprendizaje.
+          Me interesa el desarrollo de software eficiente y brindar un trato humano y de calidad.
+        </p>
+        <div class="perfil-acciones">
+          <a href="#contacto" class="btn-contacto btn-glow">
+            <i class="fas fa-envelope"></i> Contactar
+          </a>
+          <a href="#" class="btn-descargar btn-wave" id="btn-descargar-cv">
+            <i class="fas fa-download"></i> Descargar CV
+          </a>
+          <div class="theme-switch" id="theme-switch">
+            <i class="fas fa-moon"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="seccion datos-personales scroll-animation" aria-labelledby="datos-personales">
+        <h2 id="datos-personales"><i class="fas fa-user"></i> Datos Personales</h2>
+        <div class="tarjetas-container">
+          <div class="tarjeta-info">
+            <div class="tarjeta-icono">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="tarjeta-contenido">
+              <h3>Edad</h3>
+              <p>25 años</p>
+            </div>
+          </div>
+          
+          <div class="tarjeta-info">
+            <div class="tarjeta-icono">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="tarjeta-contenido">
+              <h3>Ubicación</h3>
+              <p>Bogotá, Colombia</p>
+            </div>
+          </div>
+        </div>
+        <div class="tarjetas-container">
+          <div class="tarjeta-info">
+            <div class="tarjeta-icono">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="tarjeta-contenido">
+              <h3>Teléfono</h3>
+              <p>3007709585</p>
+            </div>
+          </div>
+          
+          <div class="tarjeta-info">
+            <div class="tarjeta-icono">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="tarjeta-contenido">
+              <h3>Email</h3>
+              <p><a href="mailto:julianforero55555@gmail.com">julianforero55555@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion habilidades scroll-animation" aria-labelledby="habilidades">
+        <h2 id="habilidades"><i class="fas fa-code"></i> Habilidades</h2>
+        <div class="grupo-imagenes">
+          <figure class="icono" data-skill="HTML">
+            <div class="icono-wrapper">
+              <img src="imagenes/HTML5.png" alt="HTML5" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level">
+                <div class="progress-bar" data-progress="90"></div>
+              </div>
+            </div>
+            <figcaption>HTML</figcaption>
+          </figure>
+          
+          <figure class="icono" data-skill="CSS">
+            <div class="icono-wrapper">
+              <img src="imagenes/Css.png" alt="CSS3" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level">
+                <div class="progress-bar" data-progress="85"></div>
+              </div>
+            </div>
+            <figcaption>CSS</figcaption>
+          </figure>
+          
+          <figure class="icono" data-skill="JavaScript">
+            <div class="icono-wrapper">
+              <img src="imagenes/JavaScript.png" alt="JavaScript" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level">
+                <div class="progress-bar" data-progress="75"></div>
+              </div>
+            </div>
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          
+          <figure class="icono" data-skill="Python">
+            <div class="icono-wrapper">
+              <img src="imagenes/Python.png" alt="Python" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level">
+                <div class="progress-bar" data-progress="70"></div>
+              </div>
+            </div>
+            <figcaption>Python</figcaption>
+          </figure>
+          
+          <figure class="icono" data-skill="Ofimática">
+            <div class="icono-wrapper">
+              <img src="imagenes/Herramientas-ofimaticas.png" alt="Herramientas ofimáticas" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level">
+                <div class="progress-bar" data-progress="95"></div>
+              </div>
+            </div>
+            <figcaption>Herramientas<br>ofimáticas</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="seccion formacion scroll-animation" aria-labelledby="formacion">
+        <h2 id="formacion"><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+        <div class="timeline">
+          <article class="tarjeta timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span>2025</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="text-shadow">Técnico en programación de software</h3>
+              <p><strong>Institución:</strong> SENA</p>
+              <p><strong>Estado:</strong> En curso</p>
+              <button class="btn-certificado btn-glow" data-certificado="certificados/tecnico-programacion.pdf">
+                <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Técnico en programación</span>
+              </button>
+            </div>
+          </article>
+          
+          <article class="tarjeta timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span>2021</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Inglés B1</h3>
+              <p><strong>Institución:</strong> Smart Academia de Idiomas</p>
+              <button class="btn-certificado" data-certificado="certificados/Smart.pdf">
+                <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Inglés B1</span>
+              </button>
+            </div>
+          </article>
+          
+          <article class="tarjeta timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span>2016</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Técnico en asistencia administrativa</h3>
+              <p><strong>Institución:</strong> SENA</p>
+              <button class="btn-certificado" data-certificado="certificados/tecnico-administrativo.pdf">
+                <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Técnico en asistencia administrativa</span>
+              </button>
+            </div>
+          </article>
+          
+          <article class="tarjeta timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span>2016</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Bachillerato Académico</h3>
+              <p><strong>Institución:</strong> I.E.D. Aquileo Parra</p>
+              <button class="btn-certificado" data-certificado="certificados/bachillerato.pdf">
+                <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Bachillerato</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="seccion experiencia scroll-animation" aria-labelledby="experiencia">
+        <h2 id="experiencia"><i class="fas fa-briefcase"></i> Experiencia</h2>
+        <div class="experiencia-container">
+          <article class="tarjeta experiencia-item">
+            <div class="experiencia-header">
+              <div class="experiencia-empresa">MILLENIUM BPO S.A.S.</div>
+              <div class="experiencia-periodo">2024 - 2025</div>
+            </div>
+            <h3>Asesor SAC</h3>
+            <ul>
+              <li>Soporte básico de la página</li>
+              <li>Explicación de productos de Compensar</li>
+              <li>Acompañamiento al usuario mediante chat</li>
+            </ul>
+            <button class="btn-certificado" data-certificado="certificados/millenium.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Asesor SAC en MILLENIUM</span>
+            </button>
+          </article>
+          
+          <article class="tarjeta experiencia-item">
+            <div class="experiencia-header">
+              <div class="experiencia-empresa">GETCOM SERVICIOS S.A.S.</div>
+              <div class="experiencia-periodo">2022 - 2023</div>
+            </div>
+            <h3>Asesor SAC</h3>
+            <ul>
+              <li>Soporte básico de la aplicación</li>
+              <li>Gestión de clientes vía telefónica y chat para DiDi Food</li>
+            </ul>
+            <button class="btn-certificado" data-certificado="certificados/getcom.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Asesor SAC en GETCOM</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="seccion contacto scroll-animation" aria-labelledby="contacto">
+        <h2 id="contacto"><i class="fas fa-address-book"></i> Redes Sociales</h2>
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/julian_forero5" target="_blank" rel="noopener noreferrer" class="red-social instagram float-element">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/julian.forero.50" target="_blank" rel="noopener noreferrer" class="red-social facebook float-element">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.linkedin.com/in/julian-forero-b097891b7" target="_blank" rel="noopener noreferrer" class="red-social linkedin float-element">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/JULIANF55?tab=repositories" target="_blank" rel="noopener noreferrer" class="red-social github float-element">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- Modal para certificados -->
+  <div class="modal" id="certificado-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h3 class="modal-title">Certificado</h3>
+      <div class="modal-body">
+        <div class="certificado-placeholder">
+          <i class="fas fa-file-pdf"></i>
+          <p>El certificado no está disponible actualmente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Botón para volver arriba -->
+  <button id="btn-volver-arriba" class="btn-volver-arriba" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
