@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Currículum de Julián Forero - Desarrollador con habilidades en HTML, CSS, JavaScript y Python">
-  <title>Currículum - Julián Forero | Desarrollador</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Currículum de Julián David Forero Hernández - Desarrollador IT con experiencia en PHP, JavaScript, MySQL y soporte técnico">
+  <title>Julián Forero | Desarrollador IT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animations.css" />
@@ -13,22 +13,29 @@
 </head>
 <body>
 
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scroll-progress"></div>
 
   <div class="contenedor">
+
+    <!-- HEADER / PERFIL -->
     <header class="perfil" id="inicio">
       <div class="foto-container">
-        <img src="imagenes/foto-azul.jpg" alt="Foto de Julián Forero" class="foto-perfil rotate-3d" width="180" height="230" loading="lazy" />
+        <img src="imagenes/foto-azul.jpg" alt="Foto de Julián Forero" class="foto-perfil" width="180" height="230" loading="lazy" />
       </div>
       
       <div class="perfil-info">
+        <p class="perfil-saludo">¡Hola, soy</p>
         <h1 class="typing-effect">Julián David Forero Hernández</h1>
         <div class="perfil-titulo">
-          <span class="badge">Desarrollador Web</span>
-          <span class="badge">Programador</span>
+          <span class="badge">Desarrollador IT</span>
+          <span class="badge">Programador Web</span>
+          <span class="badge">Soporte Técnico</span>
         </div>
-        <p>
-          Soy una persona proactiva con habilidades para el trabajo en equipo y rápida capacidad de aprendizaje.
-          Me interesa el desarrollo de software eficiente y brindar un trato humano y de calidad.
+        <p class="perfil-descripcion">
+          Técnico en programación de software con experiencia en desarrollo web, bases de datos y soporte técnico empresarial. 
+          Proactivo, orientado a soluciones y con rápida capacidad de aprendizaje. 
+          Busco crecer en el sector IT aportando creatividad, dedicación y soluciones eficientes.
         </p>
         <div class="perfil-acciones">
           <a href="#contacto" class="btn-contacto btn-glow">
@@ -37,7 +44,7 @@
           <a href="#" class="btn-descargar btn-wave" id="btn-descargar-cv">
             <i class="fas fa-download"></i> Descargar CV
           </a>
-          <div class="theme-switch" id="theme-switch">
+          <div class="theme-switch" id="theme-switch" title="Cambiar tema">
             <i class="fas fa-moon"></i>
           </div>
         </div>
@@ -45,216 +52,352 @@
     </header>
 
     <main>
-      <section class="seccion datos-personales scroll-animation" aria-labelledby="datos-personales">
-        <h2 id="datos-personales"><i class="fas fa-user"></i> Datos Personales</h2>
+
+      <!-- ESTADÍSTICAS -->
+      <section class="seccion stats-section scroll-animation" aria-label="Estadísticas">
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Empresas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="7">0</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="8">0</span>
+            <span class="stat-label">Tecnologías</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Certificados</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DATOS PERSONALES -->
+      <section class="seccion datos-personales scroll-animation" aria-labelledby="datos-personales-titulo">
+        <h2 id="datos-personales-titulo"><i class="fas fa-user"></i> Datos Personales</h2>
         <div class="tarjetas-container">
           <div class="tarjeta-info">
-            <div class="tarjeta-icono">
-              <i class="fas fa-calendar-alt"></i>
-            </div>
+            <div class="tarjeta-icono"><i class="fas fa-calendar-alt"></i></div>
             <div class="tarjeta-contenido">
-              <h3>Edad</h3>
-              <p>25 años</p>
+              <h3>Fecha de nacimiento</h3>
+              <p>23 de junio de 1999 (26 años)</p>
             </div>
           </div>
-          
           <div class="tarjeta-info">
-            <div class="tarjeta-icono">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
+            <div class="tarjeta-icono"><i class="fas fa-map-marker-alt"></i></div>
             <div class="tarjeta-contenido">
               <h3>Ubicación</h3>
               <p>Bogotá, Colombia</p>
             </div>
           </div>
-        </div>
-        <div class="tarjetas-container">
           <div class="tarjeta-info">
-            <div class="tarjeta-icono">
-              <i class="fas fa-phone"></i>
-            </div>
+            <div class="tarjeta-icono"><i class="fas fa-phone"></i></div>
             <div class="tarjeta-contenido">
               <h3>Teléfono</h3>
-              <p>3007709585</p>
+              <p><a href="tel:3007709585">300 770 9585</a></p>
             </div>
           </div>
-          
           <div class="tarjeta-info">
-            <div class="tarjeta-icono">
-              <i class="fas fa-envelope"></i>
-            </div>
+            <div class="tarjeta-icono"><i class="fas fa-envelope"></i></div>
             <div class="tarjeta-contenido">
-              <h3>Email</h3>
+              <h3>Correo electrónico</h3>
               <p><a href="mailto:julianforero55555@gmail.com">julianforero55555@gmail.com</a></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="seccion habilidades scroll-animation" aria-labelledby="habilidades">
-        <h2 id="habilidades"><i class="fas fa-code"></i> Habilidades</h2>
+      <!-- HABILIDADES -->
+      <section class="seccion habilidades scroll-animation" aria-labelledby="habilidades-titulo">
+        <h2 id="habilidades-titulo"><i class="fas fa-code"></i> Habilidades Técnicas</h2>
         <div class="grupo-imagenes">
+
           <figure class="icono" data-skill="HTML">
             <div class="icono-wrapper">
               <img src="imagenes/HTML5.png" alt="HTML5" class="zoom-hover" width="100" height="100" loading="lazy" />
-              <div class="skill-level">
-                <div class="progress-bar" data-progress="90"></div>
-              </div>
+              <div class="skill-level"><div class="progress-bar" data-progress="90"></div></div>
             </div>
             <figcaption>HTML</figcaption>
           </figure>
-          
+
           <figure class="icono" data-skill="CSS">
             <div class="icono-wrapper">
               <img src="imagenes/Css.png" alt="CSS3" class="zoom-hover" width="100" height="100" loading="lazy" />
-              <div class="skill-level">
-                <div class="progress-bar" data-progress="85"></div>
-              </div>
+              <div class="skill-level"><div class="progress-bar" data-progress="85"></div></div>
             </div>
             <figcaption>CSS</figcaption>
           </figure>
-          
+
           <figure class="icono" data-skill="JavaScript">
             <div class="icono-wrapper">
               <img src="imagenes/JavaScript.png" alt="JavaScript" class="zoom-hover" width="100" height="100" loading="lazy" />
-              <div class="skill-level">
-                <div class="progress-bar" data-progress="75"></div>
-              </div>
+              <div class="skill-level"><div class="progress-bar" data-progress="75"></div></div>
             </div>
             <figcaption>JavaScript</figcaption>
           </figure>
-          
+
+          <figure class="icono" data-skill="PHP">
+            <div class="icono-wrapper">
+              <img src="imagenes/PHP.png" alt="PHP" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level"><div class="progress-bar" data-progress="70"></div></div>
+            </div>
+            <figcaption>PHP</figcaption>
+          </figure>
+
           <figure class="icono" data-skill="Python">
             <div class="icono-wrapper">
               <img src="imagenes/Python.png" alt="Python" class="zoom-hover" width="100" height="100" loading="lazy" />
-              <div class="skill-level">
-                <div class="progress-bar" data-progress="70"></div>
-              </div>
+              <div class="skill-level"><div class="progress-bar" data-progress="65"></div></div>
             </div>
             <figcaption>Python</figcaption>
           </figure>
-          
+
+          <figure class="icono" data-skill="MySQL">
+            <div class="icono-wrapper">
+              <img src="imagenes/MySQL.png" alt="MySQL" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level"><div class="progress-bar" data-progress="72"></div></div>
+            </div>
+            <figcaption>MySQL</figcaption>
+          </figure>
+
+          <figure class="icono" data-skill="Git">
+            <div class="icono-wrapper">
+              <img src="imagenes/Git.png" alt="Git / Bitbucket" class="zoom-hover" width="100" height="100" loading="lazy" />
+              <div class="skill-level"><div class="progress-bar" data-progress="68"></div></div>
+            </div>
+            <figcaption>Git / Bitbucket</figcaption>
+          </figure>
+
           <figure class="icono" data-skill="Ofimática">
             <div class="icono-wrapper">
               <img src="imagenes/Herramientas-ofimaticas.png" alt="Herramientas ofimáticas" class="zoom-hover" width="100" height="100" loading="lazy" />
-              <div class="skill-level">
-                <div class="progress-bar" data-progress="95"></div>
-              </div>
+              <div class="skill-level"><div class="progress-bar" data-progress="95"></div></div>
             </div>
             <figcaption>Herramientas<br>ofimáticas</figcaption>
           </figure>
+
         </div>
       </section>
 
-      <section class="seccion formacion scroll-animation" aria-labelledby="formacion">
-        <h2 id="formacion"><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+      <!-- FORMACIÓN ACADÉMICA -->
+      <section class="seccion formacion scroll-animation" aria-labelledby="formacion-titulo">
+        <h2 id="formacion-titulo"><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
         <div class="timeline">
+
           <article class="tarjeta timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">
-              <span>2025</span>
-            </div>
+            <div class="timeline-date"><span>2025</span></div>
             <div class="timeline-content">
-              <h3 class="text-shadow">Técnico en programación de software</h3>
-              <p><strong>Institución:</strong> SENA</p>
-              <p><strong>Estado:</strong> En curso</p>
+              <h3>Técnico en Programación de Software</h3>
+              <p><strong>Institución:</strong> SENA — Servicio Nacional de Aprendizaje</p>
+              <p><strong>Estado:</strong> Finalizado</p>
               <button class="btn-certificado btn-glow" data-certificado="certificados/tecnico-programacion.pdf">
                 <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Técnico en programación</span>
               </button>
             </div>
           </article>
-          
+
           <article class="tarjeta timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">
-              <span>2021</span>
-            </div>
+            <div class="timeline-date"><span>2021</span></div>
             <div class="timeline-content">
               <h3>Inglés B1</h3>
               <p><strong>Institución:</strong> Smart Academia de Idiomas</p>
+              <p><strong>Estado:</strong> Finalizado</p>
               <button class="btn-certificado" data-certificado="certificados/Smart.pdf">
                 <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Inglés B1</span>
               </button>
             </div>
           </article>
-          
+
           <article class="tarjeta timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">
-              <span>2016</span>
-            </div>
+            <div class="timeline-date"><span>2016</span></div>
             <div class="timeline-content">
-              <h3>Técnico en asistencia administrativa</h3>
-              <p><strong>Institución:</strong> SENA</p>
+              <h3>Técnico en Asistencia Administrativa</h3>
+              <p><strong>Institución:</strong> SENA — Servicio Nacional de Aprendizaje</p>
+              <p><strong>Estado:</strong> Finalizado</p>
               <button class="btn-certificado" data-certificado="certificados/tecnico-administrativo.pdf">
                 <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Técnico en asistencia administrativa</span>
               </button>
             </div>
           </article>
-          
+
           <article class="tarjeta timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">
-              <span>2016</span>
-            </div>
+            <div class="timeline-date"><span>2016</span></div>
             <div class="timeline-content">
               <h3>Bachillerato Académico</h3>
               <p><strong>Institución:</strong> I.E.D. Aquileo Parra</p>
+              <p><strong>Estado:</strong> Finalizado</p>
               <button class="btn-certificado" data-certificado="certificados/bachillerato.pdf">
                 <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Bachillerato</span>
               </button>
             </div>
           </article>
+
         </div>
       </section>
 
-      <section class="seccion experiencia scroll-animation" aria-labelledby="experiencia">
-        <h2 id="experiencia"><i class="fas fa-briefcase"></i> Experiencia</h2>
+      <!-- EXPERIENCIA LABORAL -->
+      <section class="seccion experiencia scroll-animation" aria-labelledby="experiencia-titulo">
+        <h2 id="experiencia-titulo"><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
         <div class="experiencia-container">
-          <article class="tarjeta experiencia-item">
+
+          <!-- CEVA - más reciente primero -->
+          <article class="tarjeta experiencia-item experiencia-actual">
             <div class="experiencia-header">
-              <div class="experiencia-empresa">MILLENIUM BPO S.A.S.</div>
-              <div class="experiencia-periodo">2024 - 2025</div>
+              <div class="experiencia-empresa">CEVA Freight Management de Colombia S.A.S.</div>
+              <div class="experiencia-periodo">Nov 2024 – May 2025</div>
             </div>
-            <h3>Asesor SAC</h3>
+            <h3>Aprendiz IT <span class="badge-actual">Más reciente</span></h3>
+            <div class="chips-container">
+              <span class="chip">PHP</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Bitbucket</span>
+              <span class="chip">XML</span>
+            </div>
             <ul>
-              <li>Soporte básico de la página</li>
-              <li>Explicación de productos de Compensar</li>
-              <li>Acompañamiento al usuario mediante chat</li>
+              <li>Soporte técnico de primer nivel en aplicativos empresariales y procesos de facturación.</li>
+              <li>Análisis y seguimiento del funcionamiento de módulos del sistema CIMA Web.</li>
+              <li>Desarrollo, ajuste y corrección de funcionalidades en PHP y JavaScript.</li>
+              <li>Identificación y solución de errores (debugging) en el software.</li>
+              <li>Creación, modificación y consulta de bases de datos MySQL mediante SQL.</li>
+              <li>Ejecución de pruebas funcionales en entornos de pruebas, local y producción.</li>
+              <li>Elaboración de manuales técnicos, funcionales y de usuario.</li>
+              <li>Control de versiones con Bitbucket y automatización de procesos internos.</li>
+              <li>Integración y validación de información mediante archivos XML.</li>
             </ul>
-            <button class="btn-certificado" data-certificado="certificados/millenium.pdf">
-              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Asesor SAC en MILLENIUM</span>
+            <button class="btn-certificado" data-certificado="certificados/ceva.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Aprendiz IT en CEVA</span>
             </button>
           </article>
-          
+
+          <!-- MILLENIUM -->
           <article class="tarjeta experiencia-item">
             <div class="experiencia-header">
-              <div class="experiencia-empresa">GETCOM SERVICIOS S.A.S.</div>
-              <div class="experiencia-periodo">2022 - 2023</div>
+              <div class="experiencia-empresa">MILLENIUM BPO S.A.</div>
+              <div class="experiencia-periodo">Feb 2024 – Oct 2025 · 20 meses</div>
+            </div>
+            <h3>Agente de Líneas Informativas</h3>
+            <div class="chips-container">
+              <span class="chip">Atención al cliente</span>
+              <span class="chip">Compensar</span>
+              <span class="chip">Chat</span>
+            </div>
+            <ul>
+              <li>Atención al cliente para la campaña <strong>Compensar Web Center</strong>.</li>
+              <li>Asesoría en recreación, educación y deporte dentro del portafolio Compensar.</li>
+              <li>Acompañamiento y soporte al usuario mediante chat en tiempo real.</li>
+              <li>Gestión de solicitudes, consultas y orientación sobre productos y servicios.</li>
+            </ul>
+            <button class="btn-certificado" data-certificado="certificados/millenium.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Agente en MILLENIUM BPO</span>
+            </button>
+          </article>
+
+          <!-- GETCOM -->
+          <article class="tarjeta experiencia-item">
+            <div class="experiencia-header">
+              <div class="experiencia-empresa">GETCOM Servicios S.A.S.</div>
+              <div class="experiencia-periodo">Dic 2022 – Dic 2023 · 1 año</div>
             </div>
             <h3>Asesor SAC</h3>
+            <div class="chips-container">
+              <span class="chip">Soporte técnico</span>
+              <span class="chip">DiDi Food</span>
+              <span class="chip">Atención telefónica</span>
+            </div>
             <ul>
-              <li>Soporte básico de la aplicación</li>
-              <li>Gestión de clientes vía telefónica y chat para DiDi Food</li>
+              <li>Soporte y atención al cliente para la campaña <strong>DiDi Food</strong>.</li>
+              <li>Gestión de incidencias y consultas de clientes y conductores vía telefónica y chat.</li>
+              <li>Resolución de problemas operativos relacionados con la aplicación.</li>
             </ul>
             <button class="btn-certificado" data-certificado="certificados/getcom.pdf">
               <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Asesor SAC en GETCOM</span>
             </button>
           </article>
+
+          <!-- COLOMBIA ESL -->
+          <article class="tarjeta experiencia-item">
+            <div class="experiencia-header">
+              <div class="experiencia-empresa">Colombia ESL S.A.S.</div>
+              <div class="experiencia-periodo">Abr 2021 – Sep 2021 · 5 meses</div>
+            </div>
+            <h3>Asesor de Ventas</h3>
+            <div class="chips-container">
+              <span class="chip">Ventas</span>
+              <span class="chip">Open English</span>
+              <span class="chip">Atención al cliente</span>
+            </div>
+            <ul>
+              <li>Venta de cursos de inglés para la campaña <strong>Open English</strong>.</li>
+              <li>Asesoría personalizada a clientes potenciales sobre planes y beneficios.</li>
+              <li>Gestión de cartera de prospectos y seguimiento comercial.</li>
+            </ul>
+            <button class="btn-certificado" data-certificado="certificados/colombia-esl.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Asesor de Ventas en Colombia ESL</span>
+            </button>
+          </article>
+
+          <!-- GNP -->
+          <article class="tarjeta experiencia-item">
+            <div class="experiencia-header">
+              <div class="experiencia-empresa">GNP — Grupo Nacional de Proyectos</div>
+              <div class="experiencia-periodo">Sep 2019 – Sep 2020 · 1 año</div>
+            </div>
+            <h3>Agente Call Center</h3>
+            <div class="chips-container">
+              <span class="chip">Call center</span>
+              <span class="chip">Claro Móvil</span>
+              <span class="chip">Ventas</span>
+            </div>
+            <ul>
+              <li>Venta de planes de celular para la campaña <strong>Claro Móvil</strong>.</li>
+              <li>Atención telefónica a clientes, manejo de objeciones y cierre de ventas.</li>
+              <li>Cumplimiento de métricas y objetivos de ventas mensuales.</li>
+            </ul>
+            <button class="btn-certificado" data-certificado="certificados/gnp.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Agente Call Center en GNP</span>
+            </button>
+          </article>
+
+          <!-- SERMAR -->
+          <article class="tarjeta experiencia-item">
+            <div class="experiencia-header">
+              <div class="experiencia-empresa">Sermar LTDA</div>
+              <div class="experiencia-periodo">Jul 2018 – Ene 2019 · 6 meses</div>
+            </div>
+            <h3>Técnico de Puertas Eléctricas</h3>
+            <div class="chips-container">
+              <span class="chip">Instalación</span>
+              <span class="chip">Mantenimiento</span>
+              <span class="chip">Automatización</span>
+              <span class="chip">Alarmas</span>
+            </div>
+            <ul>
+              <li>Instalación y mantenimiento de puertas eléctricas automáticas.</li>
+              <li>Fabricación parcial: pulido, pintura y ensamble de estructuras metálicas.</li>
+              <li>Configuración de mecanismos de apertura y cierre remoto.</li>
+              <li>Instalación de sistemas de alarma de seguridad perimetral eléctrica.</li>
+            </ul>
+            <button class="btn-certificado" data-certificado="certificados/sermar.pdf">
+              <i class="fas fa-file-pdf"></i> Ver Certificado <span class="sr-only">de Técnico en Sermar</span>
+            </button>
+          </article>
+
         </div>
       </section>
 
-      <section class="seccion contacto scroll-animation" aria-labelledby="contacto">
-        <h2 id="contacto"><i class="fas fa-address-book"></i> Redes Sociales</h2>
+      <!-- REDES SOCIALES / CONTACTO -->
+      <section class="seccion contacto scroll-animation" aria-labelledby="contacto-titulo" id="contacto">
+        <h2 id="contacto-titulo"><i class="fas fa-address-book"></i> Redes Sociales</h2>
         <div class="redes-sociales">
-          <a href="https://www.instagram.com/julian_forero5" target="_blank" rel="noopener noreferrer" class="red-social instagram float-element">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-          </a>
-          <a href="https://www.facebook.com/julian.forero.50" target="_blank" rel="noopener noreferrer" class="red-social facebook float-element">
-            <i class="fab fa-facebook"></i>
-            <span>Facebook</span>
-          </a>
           <a href="https://www.linkedin.com/in/julian-forero-b097891b7" target="_blank" rel="noopener noreferrer" class="red-social linkedin float-element">
             <i class="fab fa-linkedin"></i>
             <span>LinkedIn</span>
@@ -263,16 +406,25 @@
             <i class="fab fa-github"></i>
             <span>GitHub</span>
           </a>
+          <a href="https://www.instagram.com/julian_forero5" target="_blank" rel="noopener noreferrer" class="red-social instagram float-element">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/julian.forero.50" target="_blank" rel="noopener noreferrer" class="red-social facebook float-element">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
         </div>
       </section>
+
     </main>
   </div>
-  
+
   <!-- Modal para certificados -->
-  <div class="modal" id="certificado-modal">
+  <div class="modal" id="certificado-modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
     <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <h3 class="modal-title">Certificado</h3>
+      <span class="modal-close" role="button" aria-label="Cerrar">&times;</span>
+      <h3 class="modal-title" id="modal-titulo">Certificado</h3>
       <div class="modal-body">
         <div class="certificado-placeholder">
           <i class="fas fa-file-pdf"></i>
@@ -281,13 +433,12 @@
       </div>
     </div>
   </div>
-  
-  <!-- Botón para volver arriba -->
+
+  <!-- Botón volver arriba -->
   <button id="btn-volver-arriba" class="btn-volver-arriba" aria-label="Volver arriba">
     <i class="fas fa-arrow-up"></i>
   </button>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
-
